@@ -1,0 +1,20 @@
+{
+  "name": "@pipeworx/mcp-vizier",
+  "version": "0.1.0",
+  "description": "CDS VizieR — astronomical catalogue server (tens of thousands of catalogues)",
+  "type": "module",
+  "main": "src/index.ts",
+  "types": "src/index.ts",
+  "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "vizier"],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pipeworx-io/mcp-vizier"
+  },
+  "scripts": {
+    "typecheck": "tsc --noEmit"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.0"
+  }
+}
