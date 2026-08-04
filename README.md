@@ -1,17 +1,19 @@
-# mcp-vizier
+# @pipeworx/vizier
 
-VizieR MCP — CDS astronomical catalogue access.
+[VizieR](https://vizier.cds.unistra.fr) MCP — CDS Strasbourg astronomical catalogue server. Tens of thousands of catalogues covering stars, galaxies, exoplanets, surveys. Keyless.
 
-Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 673+ live data sources.
+Part of [Pipeworx](https://pipeworx.io) — an MCP gateway connecting AI agents to 1394+ live data sources.
 
 ## Tools
 
-| Tool | Description |
-|------|-------------|
-| `catalogs` | Search VizieR catalogue metadata. |
-| `query_catalog` | Query rows of a single catalogue (e.g. "I/345/gaia2"). |
-| `cone_search` | Cone search around (RA, Dec). |
-| `object` | Query by object name (resolved via SIMBAD/NED). |
+- `catalogs(query, max?)` — search VizieR catalogue metadata
+- `query_catalog(catalog, constraint?, columns?, max?)` — query rows of one catalogue
+- `cone_search(catalog, ra, dec, radius_deg, max?)` — cone search around (RA, Dec)
+- `object(name, catalog?)` — query by object name
+
+## Data source
+
+`https://vizier.cds.unistra.fr/viz-bin/` and `https://vizier.cds.unistra.fr/vizier/`
 
 ## Quick Start
 
@@ -27,7 +29,7 @@ Add to your MCP client (Claude Desktop, Cursor, Windsurf, etc.):
 }
 ```
 
-Or connect to the full Pipeworx gateway for access to all 673+ data sources:
+Or connect to the full Pipeworx gateway for access to all 1394+ data sources:
 
 ```json
 {
@@ -51,7 +53,7 @@ The gateway picks the right tool and fills the arguments automatically.
 
 ## More
 
-- [All tools and guides](https://github.com/pipeworx-io/examples)
+- [Docs and guides](https://pipeworx.io/docs)
 - [pipeworx.io](https://pipeworx.io)
 
 ## License
